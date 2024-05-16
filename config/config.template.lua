@@ -1,0 +1,178 @@
+Config = {}
+Config.Locale = 'cs'
+
+Config.Framework = "ESX" -- ESX or qbcore
+
+Config.EnableDebug = false -- Enable/Disable prints and showing box of targets
+Config.Target = "ox_target" -- ox_target or qb-target
+
+
+-- Config.Craftings = {
+
+------------------------------POLICE CRAFTING------------------------------
+--     ["police"] = {
+--         jobs = {["police"] = 0}, 
+--         model = `gr_prop_gr_bench_04b`, 
+--         label = 'Open police crafting', 
+--         icon = "fas fa-shield",
+--         item = "badge", 
+--         coords = { 
+--             [1] = vector4(461.5177, -981.1409, 30.6896, 273.3867),
+--             [2] = vector4(457.3632, -982.7820, 30.6896, 184.8602),
+--         },
+--         items = { 
+--             {
+--                 title = "Armour 25",
+--                 description = "50x Copper",
+--                 progressbar = "Making armour 25",
+--                 image = "https://cdn.discordapp.com/attachments/886558594408022028/1189358208767250472/25armour.png?ex=659ddf26&is=658b6a26&hm=e9184d45d88fc272873504d4353f370f0b2e429b8ee27ec6625009a309d8bd29&",
+--                 duration = 1000, 
+--                 requireditems = { .
+--                     {name = "copper", amount = 50},
+--                 },
+--                 additems = { 
+--                     {name = "25armour", amount = 1},
+--                 },
+--             },
+--             {
+--                 title = "Heavysniper",
+--                 description = "50x Steel, 50x Iron",
+--                 progressbar = "Making Heavysniper",
+--                 image = "https://cdn.discordapp.com/attachments/886558594408022028/1189358403714297896/WEAPON_HEAVYSNIPER.png?ex=659ddf54&is=658b6a54&hm=efbe8aefbc5bae6b2f404ddc030bebb594a70e375a8bb66b52bf7eefb48e61d1&",
+--                 duration = 5000, 
+--                 requireditems = { .
+--                     {name = "steel", amount = 50},
+--                     {name = "iron", amount = 50},
+--                 },
+--                 additems = { 
+--                     {name = "WEAPON_HEAVYSNIPER", amount = 1},
+--                 },
+--             },
+--             {
+--                 title = "Extended Sniper Clip",
+--                 description = "50x Steel",
+--                 progressbar = "Making Extended Sniper Clip",
+--                 image = "https://cdn.discordapp.com/attachments/886558594408022028/1189358633268564028/at_clip_extended_sniper.png?ex=659ddf8b&is=658b6a8b&hm=b0eabc7464cc0c9eb514e4aac798dee5180de6e97276742b85ece910330e6e4f&",
+--                 duration = 5000, 
+--                 requireditems = { .
+--                     {name = "steel", amount = 50},
+--                 },
+--                 additems = { 
+--                     {name = "at_clip_extended_sniper", amount = 1},
+--                 },
+--             },
+--         },
+--     },
+
+------------------------------NELEGAL CRAFTING------------------------------
+
+
+--     ["illegal"] = {
+--         jobs = nil, 
+--         model = `gr_prop_gr_bench_04b`, 
+--         label = 'Open illegal crafting',  
+--         icon = "fas fa-gun",
+--         item = "illegal_card", 
+--         coords = { -
+--             [1] = vector4(-478.1669, -1708.2946, 18.6960, 85.0696),
+--         },
+--         items = { 
+--             {
+--                 title = "Armour 75",
+--                 description = "75x Copper",
+--                 progressbar = "Making armour 75",
+--                 image = "https://cdn.discordapp.com/attachments/886558594408022028/1189358952408944770/75armour.png?ex=659ddfd7&is=658b6ad7&hm=a405c9326fb66f84931210529adf589028e3910c909ce701005259a3df08b302&",
+--                 duration = 1000, 
+--                 requireditems = {
+--                     {name = "copper", amount = 75},
+--                 },
+--                 additems = { 
+--                     {name = "75armour", amount = 1},
+--                 },
+--             },
+--             {
+--                 title = "AP Pistol",
+--                 description = "50x Steel, 50x Iron",
+--                 progressbar = "Making AP Pistol",
+--                 image = "https://cdn.discordapp.com/attachments/886558594408022028/1189359244521254943/WEAPON_APPISTOL.png?ex=659de01d&is=658b6b1d&hm=b73881577f3d0b4e93aee141dfd7b943cb410fd8d2d758b108e6365621273ddf&",
+--                 duration = 5000, 
+--                 requireditems = { 
+--                     {name = "steel", amount = 50},
+--                     {name = "iron", amount = 50},
+--                 },
+--                 additems = { 
+--                     {name = "WEAPON_APPISTOL", amount = 1},
+--                 },
+--             },
+--             {
+--                 title = "Bomb",
+--                 description = "50x Steel",
+--                 progressbar = "Making Bomb",
+--                 image = "https://cdn.discordapp.com/attachments/886558594408022028/1189359394786377798/thermite_h.png?ex=659de040&is=658b6b40&hm=f37dcd4b5f9ae8bba5834fe138f953551d5752942b40ec052c399bfa25ca49ee&",
+--                 duration = 5000, 
+--                 requireditems = { 
+--                     {name = "steel", amount = 50},
+--                 },
+--                 additems = { 
+--                     {name = "thermite_h", amount = 1},
+--                 },
+--             },
+--         },
+--     },
+
+--  ------------------------------------------ CLUB CRAFTING ------------------------------------------
+--     ["bahama"] = {
+--         jobs = {["bahama"] = 0},                        
+--         model = nil,                                       
+--         label = 'Míchaní drinků',                          
+--         icon = "fas fa-martini-glass-citrus",
+--         item = nil,                                         
+--         coords = {                                            
+--             [1] = vector4(-1379.3668, -591.4570, 30.2165, 127.7189),
+--             [2] = vector4(-1375.9387, -596.9040, 30.2165, 125.0756),
+--         },
+--         items = {                                            
+--             {
+--                 title = "Vodka",
+--                 description = "1x Vodka, 1x Energy Drink",
+--                 progressbar = "Mícháš vodku s energy",
+--                 image = "https://media.discordapp.net/attachments/1240432673047187518/1240438267300544592/vodkaenergy2_2.png?ex=66468fa9&is=66453e29&hm=9da36cb868e583c3aeef1f3b13c76cecc478390a6238ff4cbd5fd1e51e2d1c43&=&format=webp&quality=lossless",
+--                 duration = 1000,                           
+--                 requireditems = {                            
+--                     {name = "vodka", amount = 1},
+--                     {name = "energy", amount = 1},
+--                 },
+--                 additems = {                                  
+--                     {name = "vodkaenergy", amount = 1},
+--                 },
+--             },
+
+--             ----------------------------------- TEMPLATE PRO DALŠÍ DRINKY ------------------------------------------
+--             -- ["bahama"] = {
+--             --     jobs = {["bahama"] = 0},                              -- Název joby pro možnost otevření craftingu. Pokud nechceme job použijeme nil.
+--             --     model = nil,                                          -- Model nebo použít nil v případě, že nechceme použít model.
+--             --     label = 'Míchaní drinků',                             -- Název při najetí Targetem.
+--             --     icon = "fas fa-martini-glass-citrus",
+--             --     item = nil,                                           -- Název potřebného itemu (přístup.karta). Pokud nechceme potřebný item dáme nil.
+--             --     coords = {                                            -- Zadání souřadnic kde se nachází target
+--             --         [1] = vector4(-1379.3668, -591.4570, 30.2165, 127.7189),
+--             --         [2] = vector4(-1375.9387, -596.9040, 30.2165, 125.0756),
+--             --     },
+--             --     items = {                                             -- Itemy potřebné pro tvorbu v craftingu.
+--             --         {
+--             --             title = "Vodka",
+--             --             description = "1x Vodka, 1x Energy Drink",
+--             --             progressbar = "Mícháš vodku s energy",
+--             --             image = "https://media.discordapp.net/attachments/1240432673047187518/1240438267300544592/vodkaenergy2_2.png?ex=66468fa9&is=66453e29&hm=9da36cb868e583c3aeef1f3b13c76cecc478390a6238ff4cbd5fd1e51e2d1c43&=&format=webp&quality=lossless",
+--             --             duration = 1000,                              -- Po jaké době chceme aby šlo znovu craftit.
+--             --             requireditems = {                             -- Potřebné itemy pro crafting.
+--             --                 {name = "vodka", amount = 1},
+--             --                 {name = "energy", amount = 1},
+--             --             },
+--             --             additems = {                                  -- Výsledný item.
+--             --                 {name = "vodkaenergy", amount = 1},
+--             --             },
+--             --         },
+--         },
+--     },
+-- }
