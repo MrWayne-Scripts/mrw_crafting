@@ -147,7 +147,7 @@ lib.callback.register('mrw_crafting:serverprogress', function(src, text, time)
     })
 end)
 
-function despamrwAllObjects()
+function despawnAllObjects()
     for _, object in ipairs(spawnedObjects) do
         DeleteEntity(object)
     end
